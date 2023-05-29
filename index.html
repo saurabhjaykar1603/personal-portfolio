@@ -81,6 +81,10 @@
     .purple {
         color: rgb(151, 74, 224);
     }
+    #element{
+        color: rgb(151, 74, 224);
+
+    }
 </style>
 
 <body>
@@ -105,6 +109,7 @@
                 Hi, My name is <span class="purple">Saurabh</span>
                 <div>and i am a passionate</div>
                 <div>web Developer</div>
+                  <span id="element"></span>
             </div>
 
             <div class="rightSection">
@@ -112,7 +117,13 @@
             </div>
         </section>
     </main>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['I am A Web Devoloper','React javascript', '&amp; a Graphic Designer.',],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
