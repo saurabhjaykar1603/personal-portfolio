@@ -44,11 +44,13 @@
         list-style: none;
         margin: 0 23px;
     }
-    nav ul li a{
-     text-decoration: none;
-     color: #fff;
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
     }
-    nav ul li a:hover{
+
+    nav ul li a:hover {
         color: rgb(180, 180, 243);
     }
 
@@ -81,22 +83,73 @@
     .purple {
         color: rgb(151, 74, 224);
     }
-    #element{
+
+    .text-gray {
+        color: gray;
+    }
+
+    #element {
         color: rgb(151, 74, 224);
 
     }
-    .secondsection{
-        max-width:80vw ;
+
+    .secondsection {
+        max-width: 80vw;
         margin: auto;
+        height: 80vh;
     }
-    main hr{
-       background: #9c97f1;
-       height: 1.2px;
-       max-width: 40px 84px;
-       border: 0;
+
+    main hr {
+        background: #9c97f1;
+        height: 1.2px;
+        max-width: 40px 84px;
+        border: 0;
 
     }
 
+    .secondsection h1 {
+        font-size: 1.9rem;
+
+    }
+
+    .secondsection .box {
+        background: #fff;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+
+    }
+
+    .img-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+
+    }
+
+    .vertical-tital {
+        position: relative;
+        top: 75px;
+        width: 150px;
+
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        font-size: 9px;
+
+    }
 </style>
 
 <body>
@@ -121,7 +174,7 @@
                 Hi, My name is <span class="purple">Saurabh</span>
                 <div>and i am a passionate</div>
                 <div>web Developer</div>
-                  <span id="element"></span>
+                <span id="element"></span>
             </div>
 
             <div class="rightSection">
@@ -130,16 +183,80 @@
         </section>
         <hr>
         <section class="secondsection">
-            <h1>Past Experince</h1>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experince</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="./html-5.png" alt="" class="img-top">
+                    <div class="vertical-tital">
+                        html Devoloper (2023)
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum blanditiis mollitia!
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./images.png" alt="" class="img-top">
+                    <div class="vertical-tital">
+                        html Devoloper (2023)
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum blanditiis mollitia!
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./images.png" alt="" class="img-top">
+                    <div class="vertical-tital">
+                        html Devoloper (2023)
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum blanditiis mollitia!
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./images.png" alt="" class="img-top">
+                    <div class="vertical-tital">
+                        html Devoloper (2023)
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum blanditiis mollitia!
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./images.png" alt="" class="img-top">
+                    <div class="vertical-tital">
+                        html Devoloper (2023)
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum blanditiis mollitia!
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['I am A Web Devoloper','React javascript', '&amp; a Graphic Designer.',],
-          typeSpeed: 50,
+            strings: ['I am A Web Devoloper', 'React javascript', '&amp; a Graphic Designer.',],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
